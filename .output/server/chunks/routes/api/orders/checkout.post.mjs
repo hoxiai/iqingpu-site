@@ -1,4 +1,4 @@
-import { d as defineEventHandler, ab as requireTrustedRequestOrigin, bF as mergePromoTracking, bH as readPromoTracking, bG as capturePromoTracking, bS as getRequestIP, e as createError, r as readBody, bD as requireUserSession, b as db, u as users, X as clearUserSession, aE as settings, bA as ensureVisitorId, p as products, ae as resolveRequestLocale, ad as getSiteLocaleConfig, y as buildLocaleCurrencyQuote, af as getMinimalCheckoutAdminConfig, bT as stripReservedOrderMeta, ag as buildMinimalCheckoutBridgeMeta, ah as mergeMinimalCheckoutMeta, _ as isMinimalCheckoutRelayOrder, bU as MINIMAL_CHECKOUT_SOURCE, a3 as fulfillMinimalCheckoutRelay, a4 as fulfillOrder, a6 as emitEvent, b6 as userWallets, o as orders, O as ORDER_PAY_STATUS, ai as prepareOrderMetaForInsert, ak as ensureTopupRecordForOrder, a0 as createOrderAttribution, bk as trackVisitorEvent, aj as ORDER_STATUS, bV as getAffectedRows, a1 as settlePaidTopup, c as getRequestLocale, J as getLocalizedSettingValue, K as sendEmail, bW as createNotification } from '../../../nitro/nitro.mjs';
+import { d as defineEventHandler, ab as requireTrustedRequestOrigin, bH as mergePromoTracking, bJ as readPromoTracking, bI as capturePromoTracking, bU as getRequestIP, e as createError, r as readBody, bF as requireUserSession, b as db, u as users, X as clearUserSession, aG as settings, bC as ensureVisitorId, p as products, ae as resolveRequestLocale, ad as getSiteLocaleConfig, y as buildLocaleCurrencyQuote, ah as getMinimalCheckoutAdminConfig, bV as stripReservedOrderMeta, ai as buildMinimalCheckoutBridgeMeta, aj as mergeMinimalCheckoutMeta, _ as isMinimalCheckoutRelayOrder, bW as MINIMAL_CHECKOUT_SOURCE, a3 as fulfillMinimalCheckoutRelay, a4 as fulfillOrder, a6 as emitEvent, b8 as userWallets, o as orders, O as ORDER_PAY_STATUS, ak as prepareOrderMetaForInsert, am as ensureTopupRecordForOrder, a0 as createOrderAttribution, bm as trackVisitorEvent, al as ORDER_STATUS, bX as getAffectedRows, a1 as settlePaidTopup, c as getRequestLocale, J as getLocalizedSettingValue, K as sendEmail, bY as createNotification } from '../../../nitro/nitro.mjs';
 import { eq, and, gte, desc } from 'drizzle-orm';
 import crypto from 'crypto';
 import { z } from 'zod';
@@ -507,7 +507,12 @@ const checkout_post = defineEventHandler(async (event) => {
   } catch (error) {
     const locale = getPreferredLocale(event);
     const failedPrefix = locale === "zh" ? "\u521B\u5EFA\u8BA2\u5355\u5931\u8D25\uFF1A" : "Failed to create order: ";
-    return { code: 1, message: `${failedPrefix}${error.message}` };
+    const isAuthRequired = (error == null ? void 0 : error.statusCode) === 401;
+    return {
+      code: isAuthRequired ? 401 : 1,
+      authRequired: isAuthRequired,
+      message: `${failedPrefix}${error.message}`
+    };
   }
 });
 

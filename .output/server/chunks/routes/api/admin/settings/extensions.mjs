@@ -1,4 +1,4 @@
-import { d as defineEventHandler, aN as extensionManifests, aO as readExtensionMigrationStatus, aP as readEnabledExtensionIds, e as createError, r as readBody, aQ as migrateExtensionDatabase, s as setAuditMeta, aR as normalizeEnabledExtensionIds, b as db, aE as settings, aS as ENABLED_EXTENSIONS_SETTING_KEY } from '../../../../nitro/nitro.mjs';
+import { d as defineEventHandler, aP as extensionManifests, aQ as readExtensionMigrationStatus, aR as readEnabledExtensionIds, e as createError, r as readBody, aS as migrateExtensionDatabase, s as setAuditMeta, aT as normalizeEnabledExtensionIds, b as db, aG as settings, aU as ENABLED_EXTENSIONS_SETTING_KEY } from '../../../../nitro/nitro.mjs';
 import { eq } from 'drizzle-orm';
 import 'crypto';
 import 'fs';

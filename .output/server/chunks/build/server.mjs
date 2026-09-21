@@ -1,7 +1,7 @@
 import process from 'node:process';globalThis._importMeta_=globalThis._importMeta_||{url:"file:///_entry.js",env:process.env};import * as vue from 'vue';
 import { hasInjectionContext, inject, computed, defineComponent, h, useSlots, useTemplateRef, watch, nextTick, unref, mergeProps, withCtx, createVNode, renderSlot, openBlock, createBlock, createCommentVNode, watchPostEffect, createElementBlock, normalizeStyle, ref, getCurrentInstance, watchEffect, reactive, mergeDefaults, provide, toValue, useModel, createTextVNode, toDisplayString as toDisplayString$1, mergeModels, customRef, shallowRef, markRaw, toRefs, toRef as toRef$1, camelize as camelize$1, Teleport, toHandlerKey, resolveDynamicComponent, getCurrentScope, onScopeDispose, shallowReadonly, normalizeProps, guardReactiveProps, readonly, cloneVNode, isRef, useId as useId$1, Fragment, renderList, toHandlers, onServerPrefetch, resolveComponent, Comment, defineAsyncComponent, withModifiers, withAsyncContext, withKeys, resolveDirective, createElementVNode, effectScope, useSSRContext, toRaw, shallowReactive, Suspense, createApp, Text, onErrorCaptured, isReadonly, isShallow, isReactive } from 'vue';
-import { dA as serialize, cc as setResponseStatus$1, dB as getRequestURL, dC as defu, dD as isEqual$1, dE as SEO_LOCALE_LANGUAGE, dF as upperFirst, dG as defuFn, dH as appendResponseHeader, dI as resolveLocalizedSetting, dJ as parse$1, dK as getRequestHeader, dL as sanitizeStatusCode, c7 as getRequestHeaders, dM as getContext, dN as setCookie, bY as getCookie, dO as deleteCookie, dw as $fetch$1, dP as baseURL, dQ as hash, dR as createHooks, e as createError$1, dS as executeAsync, dT as normalizeSiteOrigin, dU as stripLocalePrefix$1, cF as classifySeoRoute, cE as seoRouteRegistry, dV as localePathForSeo, dW as safeJsonLd, dX as getRequestProtocol } from '../nitro/nitro.mjs';
-import { useRoute as useRoute$1, RouterView, isNavigationFailure, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
+import { dC as serialize, ce as setResponseStatus$1, dD as getRequestURL, dE as defu, dF as isEqual$1, dG as SEO_LOCALE_LANGUAGE, dH as upperFirst, dI as defuFn, dJ as resolveLocalizedSetting, dK as appendResponseHeader, dL as parse$1, dM as getRequestHeader, dN as sanitizeStatusCode, c9 as getRequestHeaders, dO as getContext, dP as setCookie, b_ as getCookie, dQ as deleteCookie, dy as $fetch$1, dR as baseURL, dS as hash, dT as createHooks, e as createError$1, dU as executeAsync, dV as normalizeSiteOrigin, dW as stripLocalePrefix$1, cH as classifySeoRoute, cG as seoRouteRegistry, dX as localePathForSeo, dY as safeJsonLd, dZ as getRequestProtocol } from '../nitro/nitro.mjs';
+import { useRoute as useRoute$1, useRouter as useRouter$1, RouterView, isNavigationFailure, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
 import { Icon, getIcon, loadIcon as loadIcon$1, _api, addAPIProvider, setCustomIconsLoader } from '@iconify/vue';
 import { getIconCSS } from '@iconify/utils/lib/css/icon';
 import { debounce } from 'perfect-debounce';
@@ -887,13 +887,13 @@ const _routes = [
   },
   {
     name: "admin-plugins-slug___en",
-    path: "/admin/plugins/:slug(.*)*",
+    path: "/en/admin/plugins/:slug(.*)*",
     meta: __nuxt_page_meta$i || {},
     component: () => import('./_...slug_-BzQ9r-KE.mjs')
   },
   {
     name: "admin-plugins-slug___zh",
-    path: "/zh/admin/plugins/:slug(.*)*",
+    path: "/admin/plugins/:slug(.*)*",
     meta: __nuxt_page_meta$i || {},
     component: () => import('./_...slug_-BzQ9r-KE.mjs')
   },
@@ -911,12 +911,12 @@ const _routes = [
   },
   {
     name: "user-plugins-slug___en",
-    path: "/user/plugins/:slug(.*)*",
+    path: "/en/user/plugins/:slug(.*)*",
     component: () => import('./_...slug_-BmiBo9Sx.mjs')
   },
   {
     name: "user-plugins-slug___zh",
-    path: "/zh/user/plugins/:slug(.*)*",
+    path: "/user/plugins/:slug(.*)*",
     component: () => import('./_...slug_-BmiBo9Sx.mjs')
   },
   {
@@ -951,7 +951,7 @@ const _routes = [
     name: "admin-login",
     path: "/admin/login",
     meta: __nuxt_page_meta$e || {},
-    component: () => import('./login-5xWHKN-5.mjs')
+    component: () => import('./login-BB2GJjvK.mjs')
   },
   {
     name: "admin-logs",
@@ -963,7 +963,7 @@ const _routes = [
     name: "admin-orders",
     path: "/admin/orders",
     meta: __nuxt_page_meta$c || {},
-    component: () => import('./orders-BUqryY22.mjs')
+    component: () => import('./orders-Y3WAG7AO.mjs')
   },
   {
     name: "admin-payments",
@@ -999,17 +999,17 @@ const _routes = [
     name: "admin-settings",
     path: "/admin/settings",
     meta: __nuxt_page_meta$6 || {},
-    component: () => import('./index-BMdjsPQp.mjs')
+    component: () => import('./index-D9YFII18.mjs')
   },
   {
     name: "admin-setup___en",
-    path: "/admin/setup",
+    path: "/en/admin/setup",
     meta: __nuxt_page_meta$5 || {},
     component: () => import('./setup-By2rDZOh.mjs')
   },
   {
     name: "admin-setup___zh",
-    path: "/zh/admin/setup",
+    path: "/admin/setup",
     meta: __nuxt_page_meta$5 || {},
     component: () => import('./setup-By2rDZOh.mjs')
   },
@@ -1057,12 +1057,12 @@ const _routes = [
   },
   {
     name: "slug___en",
-    path: "/:slug(.*)*",
+    path: "/en/:slug(.*)*",
     component: () => import('./_...slug_-CT7-B7PA.mjs')
   },
   {
     name: "slug___zh",
-    path: "/zh/:slug(.*)*",
+    path: "/:slug(.*)*",
     component: () => import('./_...slug_-CT7-B7PA.mjs')
   },
   {
@@ -5370,7 +5370,7 @@ const useAdminSession = () => {
   const adminRef = useState("admin-permissions-session", () => null);
   const loadedRef = useState("admin-permissions-loaded", () => false);
   const loadAdmin = async (force = false) => {
-    if (loadedRef.value && !force) return;
+    if (loadedRef.value && !force) return adminRef.value ?? null;
     try {
       const res = await $fetch("/api/admin/session", {
         method: "GET",
@@ -5382,6 +5382,7 @@ const useAdminSession = () => {
     } finally {
       loadedRef.value = true;
     }
+    return adminRef.value ?? null;
   };
   const resetAdmin = () => {
     adminRef.value = null;
@@ -5501,7 +5502,7 @@ const cfg0 = defineAppConfig({
   }
 });
 const inlineConfig = {
-  "appVersion": "1.0.0",
+  "appVersion": "1.0.1",
   "nuxt": {},
   "ui": {
     "colors": {
@@ -18649,9 +18650,27 @@ _sfc_main$s.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/@nuxt/ui/dist/runtime/components/Modal.vue");
   return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
+const useAuthRedirect = () => {
+  const route = useRoute$1();
+  const router = useRouter$1();
+  const { localePath: localePath2 } = useLocaleRouter();
+  const navigateToLogin = () => {
+    if (route.path.includes("/auth/login")) {
+      return;
+    }
+    router.push({
+      path: localePath2("/auth/login"),
+      query: { redirect: route.fullPath }
+    });
+  };
+  return {
+    navigateToLogin
+  };
+};
 const useCheckout = () => {
   const toast = useToast();
   const router = useRouter();
+  const { navigateToLogin } = useAuthRedirect();
   const { getSetting } = useSettings();
   const { loggedIn } = useCustomerAuth();
   const { localePath: localePath2 } = useLocaleRouter();
@@ -18705,7 +18724,7 @@ const useCheckout = () => {
         color: "warning",
         icon: "ph:lock-key-bold"
       });
-      router.push("/auth/login");
+      navigateToLogin();
       return;
     }
     if (isCreatingOrder.value) return;
@@ -18737,14 +18756,38 @@ const useCheckout = () => {
         orderId.value = newOrderId;
         isOrderModalOpen.value = true;
       } else {
-        throw new Error(res?.message || t("site.payment.checkoutToastFailedCreateOrder"));
+        const errMsg = res?.message || t("site.payment.checkoutToastFailedCreateOrder");
+        const isAuthError = res?.code === 401 || res?.authRequired || /登录|游客|guest|log in/i.test(errMsg);
+        if (isAuthError) {
+          toast.add({
+            title: t("site.payment.checkoutAuthRequiredTitle"),
+            description: errMsg,
+            color: "warning",
+            icon: "ph:lock-key-bold"
+          });
+          navigateToLogin();
+          return;
+        }
+        throw new Error(errMsg);
       }
     } catch (e) {
-      toast.add({
-        title: t("site.payment.checkoutToastFailedTitle"),
-        description: e.message || e.data?.message || t("site.payment.checkoutToastFailedInitTransaction"),
-        color: "error"
-      });
+      const errMsg = e.message || e.data?.message || t("site.payment.checkoutToastFailedInitTransaction");
+      const isAuthError = e?.statusCode === 401 || e?.data?.code === 401 || e?.data?.authRequired || /登录|游客|guest|log in/i.test(errMsg);
+      if (isAuthError) {
+        toast.add({
+          title: t("site.payment.checkoutAuthRequiredTitle"),
+          description: errMsg,
+          color: "warning",
+          icon: "ph:lock-key-bold"
+        });
+        navigateToLogin();
+      } else {
+        toast.add({
+          title: t("site.payment.checkoutToastFailedTitle"),
+          description: errMsg,
+          color: "error"
+        });
+      }
     } finally {
       if (isCreatingOrder.value) {
         isCreatingOrder.value = false;
@@ -18760,7 +18803,7 @@ const useCheckout = () => {
         color: "warning",
         icon: "ph:lock-key-bold"
       });
-      router.push("/auth/login");
+      navigateToLogin();
       return;
     }
     if (targetOrderId) {
@@ -23457,7 +23500,7 @@ const corePageModules = /* @__PURE__ */ Object.assign({
   "../core/pages/user/tokens/index.vue": __vite_glob_0_10
 });
 const themePageModules = {
-  .../* @__PURE__ */ Object.assign({ "../themes/shoply/pages/apps/[slug].vue": () => import('./_slug_-BZySU6m-.mjs'), "../themes/shoply/pages/apps/index.vue": () => import('./index-Crf3lSWp.mjs'), "../themes/shoply/pages/auth/forgot-password.vue": () => import('./forgot-password-Ce8j5aw7.mjs'), "../themes/shoply/pages/auth/login.vue": () => import('./login-Ckx1n424.mjs'), "../themes/shoply/pages/auth/register.vue": () => import('./register-CMaq1MJX.mjs'), "../themes/shoply/pages/auth/reset-password.vue": () => import('./reset-password-BB8OnOiY.mjs'), "../themes/shoply/pages/blog/[slug].vue": () => import('./_slug_-DR83L21v.mjs'), "../themes/shoply/pages/blog/index.vue": () => import('./index-CZBsq8oH.mjs'), "../themes/shoply/pages/index.vue": () => import('./index-DA0Q_qUe.mjs'), "../themes/shoply/pages/page/about.vue": () => import('./about-BnrYRo32.mjs'), "../themes/shoply/pages/page/amazon-store.vue": () => import('./amazon-store-Cn8SvUPv.mjs'), "../themes/shoply/pages/page/b2b-website.vue": () => import('./b2b-website-CGUtEyfn.mjs'), "../themes/shoply/pages/page/b2c-store.vue": () => import('./b2c-store-BwBSy1L4.mjs'), "../themes/shoply/pages/page/case.vue": () => import('./case-CrgMw04C.mjs'), "../themes/shoply/pages/page/cookies.vue": () => import('./cookies-C3mB0TYk.mjs'), "../themes/shoply/pages/page/custom.vue": () => import('./custom-FXdKnGUy.mjs'), "../themes/shoply/pages/page/install.vue": () => import('./install-DQXYEzcR.mjs'), "../themes/shoply/pages/page/migration.vue": () => import('./migration-DVHnK8nA.mjs'), "../themes/shoply/pages/page/pricing.vue": () => import('./pricing-CLlW8o5N.mjs'), "../themes/shoply/pages/page/privacy.vue": () => import('./privacy-ChaAknsu.mjs'), "../themes/shoply/pages/page/store-design.vue": () => import('./store-design-CQCiEd8z.mjs'), "../themes/shoply/pages/page/terms.vue": () => import('./terms-7ASsR3Jw.mjs'), "../themes/shoply/pages/page/weidian.vue": () => import('./weidian-CG_pmXbM.mjs'), "../themes/shoply/pages/page/wholesale.vue": () => import('./wholesale-D35Hw9Wz.mjs'), "../themes/shoply/pages/pricing.vue": () => import('./pricing-BZwPw2V1.mjs'), "../themes/shoply/pages/theme/[slug].vue": () => import('./_slug_-DzteG2RZ.mjs'), "../themes/shoply/pages/theme/detail/[slug].vue": () => import('./_slug_-CbV1bQ9q.mjs'), "../themes/shoply/pages/theme/index.vue": () => import('./index-CBMuz81d.mjs'), "../themes/shoply/pages/user/account.vue": () => import('./account-4TmYE2sr.mjs'), "../themes/shoply/pages/user/dashboard.vue": () => import('./dashboard-D2knTdfd.mjs'), "../themes/shoply/pages/user/index.vue": () => import('./index-Cn3ndMhx.mjs'), "../themes/shoply/pages/user/invoice/[order_id].vue": () => import('./_order_id_-BTi2n7Mj.mjs'), "../themes/shoply/pages/user/layout.vue": () => import('./layout-qgO_MLjL.mjs'), "../themes/shoply/pages/user/orders/[order_id].vue": () => import('./_order_id_-Cp-JX66v.mjs'), "../themes/shoply/pages/user/orders/index.vue": () => import('./index-Blbs6jhK.mjs'), "../themes/shoply/pages/user/stores/index.vue": () => import('./index-B-BR1PqM.mjs'), "../themes/shoply/pages/user/subscription.vue": () => import('./subscription-D3314guK.mjs') })
+  .../* @__PURE__ */ Object.assign({ "../themes/shoply/pages/apps/[slug].vue": () => import('./_slug_-B6O-JE-l.mjs'), "../themes/shoply/pages/apps/index.vue": () => import('./index-CZgUDlc3.mjs'), "../themes/shoply/pages/auth/forgot-password.vue": () => import('./forgot-password-ClFrcBAp.mjs'), "../themes/shoply/pages/auth/login.vue": () => import('./login-DNEB5oio.mjs'), "../themes/shoply/pages/auth/register.vue": () => import('./register-Cu0-zsd-.mjs'), "../themes/shoply/pages/auth/reset-password.vue": () => import('./reset-password-Bekbz2a9.mjs'), "../themes/shoply/pages/blog/[slug].vue": () => import('./_slug_-424MjAQA.mjs'), "../themes/shoply/pages/blog/index.vue": () => import('./index-ZgbFWfmI.mjs'), "../themes/shoply/pages/index.vue": () => import('./index-ZAp5YENC.mjs'), "../themes/shoply/pages/page/about.vue": () => import('./about-BWRBWgUn.mjs'), "../themes/shoply/pages/page/amazon-store.vue": () => import('./amazon-store-DksgVLL2.mjs'), "../themes/shoply/pages/page/b2b-website.vue": () => import('./b2b-website-DmsK-zF-.mjs'), "../themes/shoply/pages/page/b2c-store.vue": () => import('./b2c-store-ChDS2u5U.mjs'), "../themes/shoply/pages/page/case.vue": () => import('./case-V7761TJw.mjs'), "../themes/shoply/pages/page/cookies.vue": () => import('./cookies-w8KENzpH.mjs'), "../themes/shoply/pages/page/custom.vue": () => import('./custom-ChRoJzv8.mjs'), "../themes/shoply/pages/page/install.vue": () => import('./install-mBeg9qYU.mjs'), "../themes/shoply/pages/page/migration.vue": () => import('./migration-DGgkEyMN.mjs'), "../themes/shoply/pages/page/pricing.vue": () => import('./pricing-toqnYroq.mjs'), "../themes/shoply/pages/page/privacy.vue": () => import('./privacy-fUD8KSMx.mjs'), "../themes/shoply/pages/page/store-design.vue": () => import('./store-design-CIsNNDw2.mjs'), "../themes/shoply/pages/page/terms.vue": () => import('./terms-SkR6_7B4.mjs'), "../themes/shoply/pages/page/weidian.vue": () => import('./weidian-BdWFodGt.mjs'), "../themes/shoply/pages/page/wholesale.vue": () => import('./wholesale-JsZWHPzO.mjs'), "../themes/shoply/pages/pricing.vue": () => import('./pricing-BZwPw2V1.mjs'), "../themes/shoply/pages/theme/[slug].vue": () => import('./_slug_-Duf5l8kh.mjs'), "../themes/shoply/pages/theme/detail/[slug].vue": () => import('./_slug_-CbV1bQ9q.mjs'), "../themes/shoply/pages/theme/index.vue": () => import('./index-UkA20OsL.mjs'), "../themes/shoply/pages/user/account.vue": () => import('./account-UNzmTs6b.mjs'), "../themes/shoply/pages/user/dashboard.vue": () => import('./dashboard-D0l7vq_z.mjs'), "../themes/shoply/pages/user/index.vue": () => import('./index-Cn3ndMhx.mjs'), "../themes/shoply/pages/user/invoice/[order_id].vue": () => import('./_order_id_-CIyTazTr.mjs'), "../themes/shoply/pages/user/layout.vue": () => import('./layout-LcELnhC8.mjs'), "../themes/shoply/pages/user/orders/[order_id].vue": () => import('./_order_id_-B57kQ4aD.mjs'), "../themes/shoply/pages/user/orders/index.vue": () => import('./index-S3W9FXZI.mjs'), "../themes/shoply/pages/user/stores/index.vue": () => import('./index-t-6IPewy.mjs'), "../themes/shoply/pages/user/subscription.vue": () => import('./subscription-CANzVCqd.mjs') })
 };
 const themeAdminManifestModules = {
   .../* @__PURE__ */ Object.assign({
@@ -23465,7 +23508,7 @@ const themeAdminManifestModules = {
   })
 };
 const themeAdminPageModules = {
-  .../* @__PURE__ */ Object.assign({ "../themes/shoply/admin/pages/shoply-connection.vue": () => import('./shoply-connection-B5M8LK6V.mjs') })
+  .../* @__PURE__ */ Object.assign({ "../themes/shoply/admin/pages/shoply-connection.vue": () => import('./shoply-connection-COrI33hE.mjs') })
 };
 const themeAdminLocaleEnModules = {
   .../* @__PURE__ */ Object.assign({})
@@ -23474,7 +23517,7 @@ const themeAdminLocaleZhModules = {
   .../* @__PURE__ */ Object.assign({})
 };
 const themeLayoutLoaders = {
-  "shoply": () => import('./default-BWMUMqzV.mjs')
+  "shoply": () => import('./default-erq4WbD6.mjs')
 };
 const schemaVersion$3 = 1;
 const id$3 = "apps";
@@ -29196,8 +29239,8 @@ const plugin_MeUvTuoKUi51yb_kBguab6hdcExVXeTtZtTg9TZZBB8 = /* @__PURE__ */ defin
   // For type portability
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
 });
-const LazyLegalPage = defineAsyncComponent(() => import('./LegalPage-DbP2bpWV.mjs').then((r) => r["default"] || r.default || r));
-const LazyMarketingPage = defineAsyncComponent(() => import('./MarketingPage-COL-2hmH.mjs').then((r) => r["default"] || r.default || r));
+const LazyLegalPage = defineAsyncComponent(() => import('./LegalPage-DcjEkAv2.mjs').then((r) => r["default"] || r.default || r));
+const LazyMarketingPage = defineAsyncComponent(() => import('./MarketingPage-D4EeswMk.mjs').then((r) => r["default"] || r.default || r));
 const LazyMarketplaceCard = defineAsyncComponent(() => import('./MarketplaceCard-C2_FObBk.mjs').then((r) => r["default"] || r.default || r));
 const LazyMarketplaceDetail = defineAsyncComponent(() => import('./MarketplaceDetail-FFrXRKX6.mjs').then((r) => r["default"] || r.default || r));
 const LazyMarketplaceHero = defineAsyncComponent(() => import('./MarketplaceHero-Ie-4Bbve.mjs').then((r) => r["default"] || r.default || r));
@@ -29205,13 +29248,13 @@ const LazyMarketplaceList = defineAsyncComponent(() => import('./MarketplaceList
 const LazyMarketplaceVisual = defineAsyncComponent(() => import('./MarketplaceVisual-AVDGulXA.mjs').then((r) => r["default"] || r.default || r));
 const LazyPageCta = defineAsyncComponent(() => import('./PageCta-CSzQh5Ct.mjs').then((r) => r["default"] || r.default || r));
 const LazySectionHeading = defineAsyncComponent(() => import('./SectionHeading-D_ZqEZzo.mjs').then((r) => r["default"] || r.default || r));
-const LazyShoplyAuthShell = defineAsyncComponent(() => import('./ShoplyAuthShell-B3dZ8YHQ.mjs').then((r) => r["default"] || r.default || r));
-const LazyShoplyBindDialog = defineAsyncComponent(() => import('./ShoplyBindDialog-D2c0aQPV.mjs').then((n) => n.S).then((r) => r["default"] || r.default || r));
+const LazyShoplyAuthShell = defineAsyncComponent(() => import('./ShoplyAuthShell-aTUvCpOR.mjs').then((r) => r["default"] || r.default || r));
+const LazyShoplyBindDialog = defineAsyncComponent(() => import('./ShoplyBindDialog-B1GFYYf-.mjs').then((n) => n.S).then((r) => r["default"] || r.default || r));
 const LazyShoplyCheckoutModal = defineAsyncComponent(() => import('./ShoplyCheckoutModal-4Bexv-Wi.mjs').then((r) => r["default"] || r.default || r));
 const LazyShoplyConsoleHeader = defineAsyncComponent(() => import('./ShoplyConsoleHeader-DroiRVCS.mjs').then((r) => r["default"] || r.default || r));
 const LazyShoplyConsultDialog = defineAsyncComponent(() => import('./ShoplyConsultDialog-DzKSr2T3.mjs').then((r) => r["default"] || r.default || r));
 const LazyShoplyLeadForm = defineAsyncComponent(() => import('./ShoplyLeadForm-ws6ipEnv.mjs').then((r) => r["default"] || r.default || r));
-const LazyShoplyPlanCards = defineAsyncComponent(() => import('./ShoplyPlanCards-CRuUBLn2.mjs').then((r) => r["default"] || r.default || r));
+const LazyShoplyPlanCards = defineAsyncComponent(() => import('./ShoplyPlanCards-xoDLIl9R.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseA = defineAsyncComponent(() => import('./A-DPQdclw6.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseAccordion = defineAsyncComponent(() => import('./Accordion-BXrTbgiC.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseAccordionItem = defineAsyncComponent(() => import('./AccordionItem-2ckjRJL4.mjs').then((r) => r["default"] || r.default || r));
@@ -33026,8 +33069,8 @@ const __nuxt_component_1 = defineComponent({
   }
 });
 const layouts = {
-  admin: defineAsyncComponent(() => import('./admin-CQ9Y1MHz.mjs').then((m) => m.default || m)),
-  default: defineAsyncComponent(() => import('./default-DlJGlwfc.mjs').then((m) => m.default || m)),
+  admin: defineAsyncComponent(() => import('./admin-BfzJfaZf.mjs').then((m) => m.default || m)),
+  default: defineAsyncComponent(() => import('./default-DOrLs4in.mjs').then((m) => m.default || m)),
   empty: defineAsyncComponent(() => import('./empty-BEq8-jzm.mjs').then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;
@@ -33741,4 +33784,4 @@ let entry;
 }
 const entry_default = ((ssrContext) => entry(ssrContext));
 
-export { getActiveElement as $, ADMIN_PERMISSIONS as A, publishedOptionalThemes as B, useRoute as C, themeAdminLocaleEnModules as D, themeAdminLocaleZhModules as E, useExtensions as F, setResponseStatus as G, stripLocalePrefix as H, useCurrencyFormat as I, useAdminSession as J, firstAllowedAdminRoute as K, __nuxt_component_0$1 as L, useRequestURL as M, useLocaleCurrency as N, _sfc_main$g as O, PopperAnchor_default as P, PopperArrow_default as Q, createSharedComposable as R, useDirection as S, PopperRoot_default as T, createContext as U, useVModel as V, useFocusGuards as W, useBodyScrollLock as X, useForwardExpose as Y, useTypeahead as Z, _export_sfc as _, __nuxt_component_3$1 as a, formInputsInjectionKey as a$, FocusScope_default as a0, DismissableLayer_default as a1, PopperContent_default as a2, getOpenState as a3, PopperContentPropsDefaultValue as a4, isPointerInGraceArea as a5, isMouseEvent as a6, FIRST_LAST_KEYS as a7, LAST_KEYS as a8, focusFirst as a9, _sfc_main$D as aA, omit as aB, useComponentUI as aC, reactivePick as aD, tv as aE, useLocaleRouter as aF, createEventHook as aG, useFormField as aH, useFieldGroup as aI, useComponentIcons as aJ, compare as aK, _sfc_main$F as aL, looseToNumber as aM, getDisplayValue as aN, useFormControl as aO, Label_default as aP, VisuallyHidden_default as aQ, isNullish as aR, useResizeObserver as aS, useNuxtApp as aT, refAutoReset as aU, handleAndDispatchCustomEvent$1 as aV, useParentElement as aW, getNextMatch as aX, formBusInjectionKey as aY, formStateInjectionKey as aZ, formErrorsInjectionKey as a_, useCollection as aa, Primitive as ab, SELECTION_KEYS$1 as ac, ITEM_SELECT as ad, Presence_default as ae, isIndeterminate as af, getCheckedState as ag, reactiveOmit as ah, useForwardProps as ai, useForwardPropsEmits as aj, useHideOthers as ak, useId as al, Teleport_default as am, SUB_CLOSE_KEYS as an, SUB_OPEN_KEYS as ao, useEmitAsProps as ap, usePrimitiveElement as aq, useLocale as ar, useAppConfig as as, usePortal as at, createReusableTemplate as au, isArrayOfArray as av, _sfc_main$E as aw, get as ax, _sfc_main$C as ay, pickLinkProps as az, _sfc_main$G as b, formLoadingInjectionKey as b0, formOptionsInjectionKey as b1, useEventBus as b2, tryOnScopeDispose$1 as b3, injectTooltipProviderContext as b4, useTimeoutFn as b5, corePageModules as b6, themePageModules as b7, useActiveTheme as b8, useSeoMeta as b9, DialogContent_default as bA, DialogTitle_default as bB, DialogDescription_default as bC, DialogClose_default as bD, themeLayoutLoaders as bE, useCustomerAuth as ba, useJsonLd as bb, useCheckout as bc, __nuxt_component_1$1 as bd, transformUI as be, useEventListener$1 as bf, useRuntimeConfig as bg, resolveBaseURL as bh, ImageComponent as bi, DialogRoot_default as bj, DialogTrigger_default as bk, DialogPortal_default as bl, useClipboard as bm, publishedOptionalThemeSet as bn, useCollectionPageJsonLd as bo, _sfc_main$d as bp, useUserSession as bq, refThrottled as br, useDebounceFn as bs, useActiveElement as bt, __nuxt_component_2$2 as bu, useState as bv, useLocalizedSettings as bw, useCookie as bx, pointerDownOutside as by, DialogOverlay_default as bz, _sfc_main$l as c, _sfc_main$k as d, entry_default as default, useI18n as e, useFormatTime as f, useToast as g, useAdminPermissions as h, useAdminExtensions as i, moduleEditCode as j, _sfc_main$B as k, _sfc_main$h as l, moduleViewCode as m, _sfc_main$x as n, _sfc_main$j as o, _sfc_main$s as p, navigateTo as q, useRouter as r, useConfirm as s, useSettings as t, useHead as u, useAsyncData as v, themeExtensionPermissionCode as w, usePagination as x, useFetch as y, _sfc_main$n as z };
+export { getActiveElement as $, ADMIN_PERMISSIONS as A, publishedOptionalThemes as B, useRoute as C, themeAdminLocaleEnModules as D, themeAdminLocaleZhModules as E, useExtensions as F, setResponseStatus as G, stripLocalePrefix as H, useCurrencyFormat as I, useAdminSession as J, firstAllowedAdminRoute as K, __nuxt_component_0$1 as L, useRequestURL as M, useLocaleCurrency as N, _sfc_main$g as O, PopperAnchor_default as P, PopperArrow_default as Q, createSharedComposable as R, useDirection as S, PopperRoot_default as T, createContext as U, useVModel as V, useFocusGuards as W, useBodyScrollLock as X, useForwardExpose as Y, useTypeahead as Z, _export_sfc as _, __nuxt_component_3$1 as a, formInputsInjectionKey as a$, FocusScope_default as a0, DismissableLayer_default as a1, PopperContent_default as a2, getOpenState as a3, PopperContentPropsDefaultValue as a4, isPointerInGraceArea as a5, isMouseEvent as a6, FIRST_LAST_KEYS as a7, LAST_KEYS as a8, focusFirst as a9, _sfc_main$D as aA, omit as aB, useComponentUI as aC, reactivePick as aD, tv as aE, useLocaleRouter as aF, createEventHook as aG, useFormField as aH, useFieldGroup as aI, useComponentIcons as aJ, compare as aK, _sfc_main$F as aL, looseToNumber as aM, getDisplayValue as aN, useFormControl as aO, Label_default as aP, VisuallyHidden_default as aQ, isNullish as aR, useResizeObserver as aS, useNuxtApp as aT, refAutoReset as aU, handleAndDispatchCustomEvent$1 as aV, useParentElement as aW, getNextMatch as aX, formBusInjectionKey as aY, formStateInjectionKey as aZ, formErrorsInjectionKey as a_, useCollection as aa, Primitive as ab, SELECTION_KEYS$1 as ac, ITEM_SELECT as ad, Presence_default as ae, isIndeterminate as af, getCheckedState as ag, reactiveOmit as ah, useForwardProps as ai, useForwardPropsEmits as aj, useHideOthers as ak, useId as al, Teleport_default as am, SUB_CLOSE_KEYS as an, SUB_OPEN_KEYS as ao, useEmitAsProps as ap, usePrimitiveElement as aq, useLocale as ar, useAppConfig as as, usePortal as at, createReusableTemplate as au, isArrayOfArray as av, _sfc_main$E as aw, get as ax, _sfc_main$C as ay, pickLinkProps as az, _sfc_main$G as b, formLoadingInjectionKey as b0, formOptionsInjectionKey as b1, useEventBus as b2, tryOnScopeDispose$1 as b3, injectTooltipProviderContext as b4, useTimeoutFn as b5, corePageModules as b6, themePageModules as b7, useActiveTheme as b8, useSeoMeta as b9, DialogContent_default as bA, DialogTitle_default as bB, DialogDescription_default as bC, DialogClose_default as bD, themeLayoutLoaders as bE, useCustomerAuth as ba, useJsonLd as bb, useCheckout as bc, __nuxt_component_1$1 as bd, transformUI as be, useEventListener$1 as bf, useRuntimeConfig as bg, resolveBaseURL as bh, ImageComponent as bi, DialogRoot_default as bj, DialogTrigger_default as bk, DialogPortal_default as bl, useClipboard as bm, publishedOptionalThemeSet as bn, useCollectionPageJsonLd as bo, useLocalizedSettings as bp, _sfc_main$d as bq, useUserSession as br, refThrottled as bs, useDebounceFn as bt, useActiveElement as bu, __nuxt_component_2$2 as bv, useState as bw, useCookie as bx, pointerDownOutside as by, DialogOverlay_default as bz, _sfc_main$l as c, _sfc_main$k as d, entry_default as default, useI18n as e, useFormatTime as f, useToast as g, useAdminPermissions as h, useAdminExtensions as i, moduleEditCode as j, _sfc_main$B as k, _sfc_main$h as l, moduleViewCode as m, _sfc_main$x as n, _sfc_main$j as o, _sfc_main$s as p, navigateTo as q, useRouter as r, useConfirm as s, useSettings as t, useHead as u, useAsyncData as v, themeExtensionPermissionCode as w, usePagination as x, useFetch as y, _sfc_main$n as z };

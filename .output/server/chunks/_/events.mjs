@@ -1,4 +1,4 @@
-import { $ as readMinimalCheckoutBridgeMeta, dn as sendMinimalCheckoutPaidNotification } from '../nitro/nitro.mjs';
+import { $ as readMinimalCheckoutBridgeMeta, dq as sendMinimalCheckoutPaidNotification } from '../nitro/nitro.mjs';
 import 'drizzle-orm';
 import 'crypto';
 import 'fs';

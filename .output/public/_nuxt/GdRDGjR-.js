@@ -1,0 +1,1 @@
+import{t as r}from"./B3xfbHYT.js";import{n as c,d as e}from"./ly35PcH5.js";const f=()=>{const{getSetting:l}=r(),t=e(()=>String(l("shoply_consult_url","mailto:support@shoply.cn"))),s=e(()=>/^https?:\/\//i.test(t.value)),o=c(!1),n=()=>{o.value=!0};return{consultUrl:t,isExternal:s,isOpen:o,open:n,onConsultClick:u=>{s.value||(u.preventDefault(),n())}}};export{f as u};

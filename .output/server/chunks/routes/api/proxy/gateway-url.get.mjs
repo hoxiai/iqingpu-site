@@ -1,4 +1,4 @@
-import { d as defineEventHandler, ca as getAIGatewayUrl } from '../../../nitro/nitro.mjs';
+import { d as defineEventHandler, cc as getAIGatewayUrl } from '../../../nitro/nitro.mjs';
 import 'drizzle-orm';
 import 'crypto';
 import 'fs';

@@ -1,4 +1,4 @@
-import { d as defineEventHandler, aM as getUserSession, e as createError, g as getQuery, b4 as tickets, b as db } from '../../../nitro/nitro.mjs';
+import { d as defineEventHandler, aO as getUserSession, e as createError, g as getQuery, b6 as tickets, b as db } from '../../../nitro/nitro.mjs';
 import { eq, and, count, desc } from 'drizzle-orm';
 import 'crypto';
 import 'fs';

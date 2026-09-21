@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { d as defineEventHandler, e as createError, cB as setHeader, bP as getHeader, cc as setResponseStatus, cH as sendStream } from '../../nitro/nitro.mjs';
+import { d as defineEventHandler, e as createError, cD as setHeader, bR as getHeader, ce as setResponseStatus, cJ as sendStream } from '../../nitro/nitro.mjs';
 import 'drizzle-orm';
 import 'crypto';
 import 'fs';

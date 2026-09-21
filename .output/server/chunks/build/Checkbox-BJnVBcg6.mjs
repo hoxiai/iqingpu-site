@@ -4,7 +4,7 @@ import { as as useAppConfig, aC as useComponentUI, aj as useForwardPropsEmits, a
 import { i as isValueEqualOrExist } from './isValueEqualOrExist-o77D--E4.mjs';
 import { V as VisuallyHiddenInput_default } from './VisuallyHiddenInput-c1s_4jkv.mjs';
 import { R as RovingFocusItem_default } from './RovingFocusItem-DyHBwisL.mjs';
-import { dD as isEqual } from '../nitro/nitro.mjs';
+import { dF as isEqual } from '../nitro/nitro.mjs';
 
 const [injectCheckboxGroupRootContext] = createContext("CheckboxGroupRoot");
 function isIndeterminate(checked) {

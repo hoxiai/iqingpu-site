@@ -1,4 +1,4 @@
-import { d as defineEventHandler, c as getRequestLocale, f as getRouterParam, cx as readRawBody, r as readBody, g as getQuery, c7 as getRequestHeaders, bu as logger, e as createError, b as db, o as orders, O as ORDER_PAY_STATUS, cy as markOrderPaid, am as paymentMethods, cz as executeCallbackScript, cc as setResponseStatus, aj as ORDER_STATUS, bV as getAffectedRows, cA as markTopupPaymentFailed, a7 as cancelPromoCommission, a8 as revokeSubscriptionForOrder, a9 as refundTopup, cB as setHeader } from '../../../nitro/nitro.mjs';
+import { d as defineEventHandler, c as getRequestLocale, f as getRouterParam, cz as readRawBody, r as readBody, g as getQuery, c9 as getRequestHeaders, bw as logger, e as createError, b as db, o as orders, O as ORDER_PAY_STATUS, cA as markOrderPaid, ao as paymentMethods, cB as executeCallbackScript, ce as setResponseStatus, al as ORDER_STATUS, bX as getAffectedRows, cC as markTopupPaymentFailed, a7 as cancelPromoCommission, a8 as revokeSubscriptionForOrder, a9 as refundTopup, cD as setHeader } from '../../../nitro/nitro.mjs';
 import { eq, and, ne } from 'drizzle-orm';
 import fs from 'fs';
 import path from 'path';
@@ -220,7 +220,7 @@ const _order_id__post = defineEventHandler(async (event) => {
           if (result.tradeNo) updateData.tradeNo = result.tradeNo;
           await db.update(orders).set(updateData).where(eq(orders.id, result.orderId));
           await cancelPromoCommission(result.orderId, `webhook_${result.status}`);
-          await revokeSubscriptionForOrder(Number(result.orderId), `webhook_${result.status}`).catch((err) => console.error("[Webhook] revokeSubscriptionForOrder failed:", err));
+          await revokeSubscriptionForOrder(String(result.orderId), `webhook_${result.status}`).catch((err) => console.error("[Webhook] revokeSubscriptionForOrder failed:", err));
           if (result.status === "refunded" && order2.userId) {
             await refundTopup(result.orderId).catch((err) => console.error("[Webhook] refundTopup failed:", err));
           }

@@ -81,7 +81,7 @@ const _id__put = defineEventHandler(async (event) => {
     const refundedOrder = result[0];
     await cancelPromoCommission(id, `admin_${body.payStatus}`);
     try {
-      await revokeSubscriptionForOrder(Number(id), `admin_${body.payStatus}`);
+      await revokeSubscriptionForOrder(String(id), `admin_${body.payStatus}`);
     } catch (error) {
       console.error(`[Subscription] failed to revoke for refunded order ${id}:`, error);
     }

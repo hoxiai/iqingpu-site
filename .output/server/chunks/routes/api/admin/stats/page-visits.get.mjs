@@ -1,4 +1,4 @@
-import { d as defineEventHandler, g as getQuery, w as getConfiguredTimezone, aV as parseStatsRange, a_ as clampStatsPage, a$ as clampStatsPageSize, aX as visitorEvents, b as db } from '../../../../nitro/nitro.mjs';
+import { d as defineEventHandler, g as getQuery, w as getConfiguredTimezone, aX as parseStatsRange, b0 as clampStatsPage, b1 as clampStatsPageSize, aZ as visitorEvents, b as db } from '../../../../nitro/nitro.mjs';
 import { and, gte, lt, eq, count, desc } from 'drizzle-orm';
 import 'crypto';
 import 'fs';

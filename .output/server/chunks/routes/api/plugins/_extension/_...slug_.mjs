@@ -1,4 +1,4 @@
-import { d as defineEventHandler, ap as dispatchExtensionApi } from '../../../../nitro/nitro.mjs';
+import { d as defineEventHandler, ar as dispatchExtensionApi } from '../../../../nitro/nitro.mjs';
 import 'drizzle-orm';
 import 'crypto';
 import 'fs';
