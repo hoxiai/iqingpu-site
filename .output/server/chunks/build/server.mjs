@@ -5502,7 +5502,7 @@ const cfg0 = defineAppConfig({
   }
 });
 const inlineConfig = {
-  "appVersion": "1.0.1",
+  "appVersion": "1.0.2",
   "nuxt": {},
   "ui": {
     "colors": {
@@ -23500,7 +23500,7 @@ const corePageModules = /* @__PURE__ */ Object.assign({
   "../core/pages/user/tokens/index.vue": __vite_glob_0_10
 });
 const themePageModules = {
-  .../* @__PURE__ */ Object.assign({ "../themes/shoply/pages/apps/[slug].vue": () => import('./_slug_-B6O-JE-l.mjs'), "../themes/shoply/pages/apps/index.vue": () => import('./index-CZgUDlc3.mjs'), "../themes/shoply/pages/auth/forgot-password.vue": () => import('./forgot-password-ClFrcBAp.mjs'), "../themes/shoply/pages/auth/login.vue": () => import('./login-DNEB5oio.mjs'), "../themes/shoply/pages/auth/register.vue": () => import('./register-Cu0-zsd-.mjs'), "../themes/shoply/pages/auth/reset-password.vue": () => import('./reset-password-Bekbz2a9.mjs'), "../themes/shoply/pages/blog/[slug].vue": () => import('./_slug_-424MjAQA.mjs'), "../themes/shoply/pages/blog/index.vue": () => import('./index-ZgbFWfmI.mjs'), "../themes/shoply/pages/index.vue": () => import('./index-Bz6jP5Cy.mjs'), "../themes/shoply/pages/page/about.vue": () => import('./about-BohMTc6B.mjs'), "../themes/shoply/pages/page/amazon-store.vue": () => import('./amazon-store-ha9U7AG7.mjs'), "../themes/shoply/pages/page/b2b-website.vue": () => import('./b2b-website-DdU7O3Zw.mjs'), "../themes/shoply/pages/page/b2c-store.vue": () => import('./b2c-store-QidfDaG-.mjs'), "../themes/shoply/pages/page/case.vue": () => import('./case-D_svpefx.mjs'), "../themes/shoply/pages/page/cookies.vue": () => import('./cookies-C4Gq4KaZ.mjs'), "../themes/shoply/pages/page/custom.vue": () => import('./custom-Ccv9XGzl.mjs'), "../themes/shoply/pages/page/install.vue": () => import('./install-ni9J16yP.mjs'), "../themes/shoply/pages/page/migration.vue": () => import('./migration-Bxvi9zzv.mjs'), "../themes/shoply/pages/page/pricing.vue": () => import('./pricing-cL3EfNvJ.mjs'), "../themes/shoply/pages/page/privacy.vue": () => import('./privacy-BXCiOCNT.mjs'), "../themes/shoply/pages/page/store-design.vue": () => import('./store-design-CIsNNDw2.mjs'), "../themes/shoply/pages/page/terms.vue": () => import('./terms-DQ57pdFD.mjs'), "../themes/shoply/pages/page/weidian.vue": () => import('./weidian-WZcqXeOt.mjs'), "../themes/shoply/pages/page/wholesale.vue": () => import('./wholesale-BRoN5qX3.mjs'), "../themes/shoply/pages/pricing.vue": () => import('./pricing-BZwPw2V1.mjs'), "../themes/shoply/pages/theme/[slug].vue": () => import('./_slug_-Duf5l8kh.mjs'), "../themes/shoply/pages/theme/detail/[slug].vue": () => import('./_slug_-CbV1bQ9q.mjs'), "../themes/shoply/pages/theme/index.vue": () => import('./index-UkA20OsL.mjs'), "../themes/shoply/pages/user/account.vue": () => import('./account-UNzmTs6b.mjs'), "../themes/shoply/pages/user/dashboard.vue": () => import('./dashboard-D0l7vq_z.mjs'), "../themes/shoply/pages/user/index.vue": () => import('./index-Cn3ndMhx.mjs'), "../themes/shoply/pages/user/invoice/[order_id].vue": () => import('./_order_id_-CIyTazTr.mjs'), "../themes/shoply/pages/user/layout.vue": () => import('./layout-LcELnhC8.mjs'), "../themes/shoply/pages/user/orders/[order_id].vue": () => import('./_order_id_-B57kQ4aD.mjs'), "../themes/shoply/pages/user/orders/index.vue": () => import('./index-S3W9FXZI.mjs'), "../themes/shoply/pages/user/stores/index.vue": () => import('./index-t-6IPewy.mjs'), "../themes/shoply/pages/user/subscription.vue": () => import('./subscription-CANzVCqd.mjs') })
+  .../* @__PURE__ */ Object.assign({ "../themes/shoply/pages/apps/[slug].vue": () => import('./_slug_-DAVix7y0.mjs'), "../themes/shoply/pages/apps/index.vue": () => import('./index-CGV3UArb.mjs'), "../themes/shoply/pages/auth/forgot-password.vue": () => import('./forgot-password-ClFrcBAp.mjs'), "../themes/shoply/pages/auth/login.vue": () => import('./login-DNEB5oio.mjs'), "../themes/shoply/pages/auth/register.vue": () => import('./register-Cu0-zsd-.mjs'), "../themes/shoply/pages/auth/reset-password.vue": () => import('./reset-password-Bekbz2a9.mjs'), "../themes/shoply/pages/blog/[slug].vue": () => import('./_slug_-424MjAQA.mjs'), "../themes/shoply/pages/blog/index.vue": () => import('./index-ZgbFWfmI.mjs'), "../themes/shoply/pages/index.vue": () => import('./index-Bz6jP5Cy.mjs'), "../themes/shoply/pages/page/about.vue": () => import('./about-BohMTc6B.mjs'), "../themes/shoply/pages/page/amazon-store.vue": () => import('./amazon-store-ha9U7AG7.mjs'), "../themes/shoply/pages/page/b2b-website.vue": () => import('./b2b-website-DdU7O3Zw.mjs'), "../themes/shoply/pages/page/b2c-store.vue": () => import('./b2c-store-QidfDaG-.mjs'), "../themes/shoply/pages/page/case.vue": () => import('./case-D_svpefx.mjs'), "../themes/shoply/pages/page/cookies.vue": () => import('./cookies-C4Gq4KaZ.mjs'), "../themes/shoply/pages/page/custom.vue": () => import('./custom-Ccv9XGzl.mjs'), "../themes/shoply/pages/page/install.vue": () => import('./install-ni9J16yP.mjs'), "../themes/shoply/pages/page/migration.vue": () => import('./migration-Bxvi9zzv.mjs'), "../themes/shoply/pages/page/pricing.vue": () => import('./pricing-cL3EfNvJ.mjs'), "../themes/shoply/pages/page/privacy.vue": () => import('./privacy-BXCiOCNT.mjs'), "../themes/shoply/pages/page/store-design.vue": () => import('./store-design-b9yTcobO.mjs'), "../themes/shoply/pages/page/terms.vue": () => import('./terms-DQ57pdFD.mjs'), "../themes/shoply/pages/page/weidian.vue": () => import('./weidian-WZcqXeOt.mjs'), "../themes/shoply/pages/page/wholesale.vue": () => import('./wholesale-BRoN5qX3.mjs'), "../themes/shoply/pages/pricing.vue": () => import('./pricing-BZwPw2V1.mjs'), "../themes/shoply/pages/themes/[slug].vue": () => import('./_slug_-bknXoW4y.mjs'), "../themes/shoply/pages/themes/detail/[slug].vue": () => import('./_slug_--zJLuAn3.mjs'), "../themes/shoply/pages/themes/index.vue": () => import('./index-BphNUN_K.mjs'), "../themes/shoply/pages/user/account.vue": () => import('./account-UNzmTs6b.mjs'), "../themes/shoply/pages/user/dashboard.vue": () => import('./dashboard-D0l7vq_z.mjs'), "../themes/shoply/pages/user/index.vue": () => import('./index-Cn3ndMhx.mjs'), "../themes/shoply/pages/user/invoice/[order_id].vue": () => import('./_order_id_-CIyTazTr.mjs'), "../themes/shoply/pages/user/layout.vue": () => import('./layout-LcELnhC8.mjs'), "../themes/shoply/pages/user/orders/[order_id].vue": () => import('./_order_id_-B57kQ4aD.mjs'), "../themes/shoply/pages/user/orders/index.vue": () => import('./index-S3W9FXZI.mjs'), "../themes/shoply/pages/user/stores/index.vue": () => import('./index-t-6IPewy.mjs'), "../themes/shoply/pages/user/subscription.vue": () => import('./subscription-CANzVCqd.mjs') })
 };
 const themeAdminManifestModules = {
   .../* @__PURE__ */ Object.assign({
@@ -23517,7 +23517,7 @@ const themeAdminLocaleZhModules = {
   .../* @__PURE__ */ Object.assign({})
 };
 const themeLayoutLoaders = {
-  "shoply": () => import('./default-Cow3xzjf.mjs')
+  "shoply": () => import('./default-BRWPSvdM.mjs')
 };
 const schemaVersion$3 = 1;
 const id$3 = "apps";
@@ -27077,12 +27077,12 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
     const busyId = ref("");
     const form = reactive(copyItem());
     const { data, pending, refresh } = ([__temp, __restore] = withAsyncContext(() => useFetch(
-      "/api/admin/plugins/theme/catalog/list",
+      "/api/admin/plugins/themes/catalog/list",
       {
         query: { page, pageSize: pageSize2, keyword, status },
         watch: [page]
       },
-      "$t_4AgUQlH1"
+      "$dVbPXednsQ"
       /* nuxt-injected */
     )), __temp = await __temp, __restore(), __temp);
     const rows = computed(() => data.value?.data || []);
@@ -27110,7 +27110,7 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
     const save = async () => {
       saving.value = true;
       try {
-        await $fetch(`/api/admin/plugins/theme/catalog/${form.id ? "update" : "create"}`, {
+        await $fetch(`/api/admin/plugins/themes/catalog/${form.id ? "update" : "create"}`, {
           method: form.id ? "PATCH" : "POST",
           body: { ...form }
         });
@@ -27126,7 +27126,7 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
     const toggleStatus = async (item) => {
       busyId.value = item.id;
       try {
-        await $fetch("/api/admin/plugins/theme/catalog/update", { method: "PATCH", body: { ...item, status: item.status === 20 ? 10 : 20 } });
+        await $fetch("/api/admin/plugins/themes/catalog/update", { method: "PATCH", body: { ...item, status: item.status === 20 ? 10 : 20 } });
         await refresh();
       } catch (error) {
         toast.add({ title: text2.value.failed, description: apiError(error), color: "error" });
@@ -27138,7 +27138,7 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
       if (item.status === 20 || !(void 0).confirm(text2.value.confirmDelete)) return;
       busyId.value = item.id;
       try {
-        await $fetch("/api/admin/plugins/theme/catalog/delete", { method: "DELETE", query: { id: item.id } });
+        await $fetch("/api/admin/plugins/themes/catalog/delete", { method: "DELETE", query: { id: item.id } });
         toast.add({ title: text2.value.removed, color: "success" });
         await refresh();
       } catch (error) {
@@ -28303,7 +28303,7 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
 const _sfc_setup$b = _sfc_main$b.setup;
 _sfc_main$b.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("extensions/theme/admin/pages/catalog.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("extensions/themes/admin/pages/catalog.vue");
   return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
 const _sfc_main$a = /* @__PURE__ */ defineComponent({
@@ -28382,13 +28382,13 @@ const manifestModules = /* @__PURE__ */ Object.assign({
   "../extensions/apps/extension.json": __vite_glob_0_0,
   "../extensions/example-tools/extension.json": __vite_glob_0_1,
   "../extensions/shoply-leads/extension.json": __vite_glob_0_2,
-  "../extensions/theme/extension.json": __vite_glob_0_3
+  "../extensions/themes/extension.json": __vite_glob_0_3
 });
 const adminPageModules = /* @__PURE__ */ Object.assign({
   "../extensions/apps/admin/pages/catalog.vue": _sfc_main$f,
   "../extensions/example-tools/admin/pages/overview.vue": _sfc_main$e,
   "../extensions/shoply-leads/admin/pages/inbox.vue": _sfc_main$c,
-  "../extensions/theme/admin/pages/catalog.vue": _sfc_main$b
+  "../extensions/themes/admin/pages/catalog.vue": _sfc_main$b
 });
 const userPageModules = /* @__PURE__ */ Object.assign({
   "../extensions/example-tools/user/pages/overview.vue": _sfc_main$a
@@ -29242,9 +29242,9 @@ const plugin_MeUvTuoKUi51yb_kBguab6hdcExVXeTtZtTg9TZZBB8 = /* @__PURE__ */ defin
 const LazyLegalPage = defineAsyncComponent(() => import('./LegalPage-ClEnuhsN.mjs').then((r) => r["default"] || r.default || r));
 const LazyMarketingPage = defineAsyncComponent(() => import('./MarketingPage-Aydw6Y5r.mjs').then((r) => r["default"] || r.default || r));
 const LazyMarketplaceCard = defineAsyncComponent(() => import('./MarketplaceCard-C2_FObBk.mjs').then((r) => r["default"] || r.default || r));
-const LazyMarketplaceDetail = defineAsyncComponent(() => import('./MarketplaceDetail-FFrXRKX6.mjs').then((r) => r["default"] || r.default || r));
+const LazyMarketplaceDetail = defineAsyncComponent(() => import('./MarketplaceDetail-z-vBkvde.mjs').then((r) => r["default"] || r.default || r));
 const LazyMarketplaceHero = defineAsyncComponent(() => import('./MarketplaceHero-Ie-4Bbve.mjs').then((r) => r["default"] || r.default || r));
-const LazyMarketplaceList = defineAsyncComponent(() => import('./MarketplaceList-pHBJS6pO.mjs').then((r) => r["default"] || r.default || r));
+const LazyMarketplaceList = defineAsyncComponent(() => import('./MarketplaceList-DeQ5mRIS.mjs').then((r) => r["default"] || r.default || r));
 const LazyMarketplaceVisual = defineAsyncComponent(() => import('./MarketplaceVisual-AVDGulXA.mjs').then((r) => r["default"] || r.default || r));
 const LazyPageCta = defineAsyncComponent(() => import('./PageCta-CSzQh5Ct.mjs').then((r) => r["default"] || r.default || r));
 const LazySectionHeading = defineAsyncComponent(() => import('./SectionHeading-D_ZqEZzo.mjs').then((r) => r["default"] || r.default || r));
@@ -31362,7 +31362,7 @@ const i18n_seo_im8SQ1ePLoUivIUo65pX2ilaAPZtc0aGSNATIOvFBFY = /* @__PURE__ */ def
     });
   }
 });
-const LIST_PATHS = /* @__PURE__ */ new Set(["/products", "/blog", "/apps", "/theme"]);
+const LIST_PATHS = /* @__PURE__ */ new Set(["/products", "/blog", "/apps", "/themes"]);
 const resolveAbsoluteUrl = (value, base) => {
   try {
     const url = new URL(value, base);
